@@ -1,0 +1,120 @@
+/* Specification */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.3em;
+    background-color: #f8f8f8;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 68.75rem;
+    margin: 0 auto;
+}
+
+.section__title {
+    margin-top: 4.375rem;
+    text-align: center;
+}
+
+.list {
+    margin: 3rem 0;
+}
+
+.item__input {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.item i {
+    transition: transform 0.5s ease;
+}
+
+.item__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+
+.item__title:hover {
+    background-color: #5411b9;
+    color: #fff;
+}
+
+.item__input:checked ~ .item__title {
+    background-color: #220055;
+    color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.item__input:checked ~ .item__title i {
+    transform: rotate(135deg);
+}
+
+.item__picture {
+    display: none;
+    margin-top: 1.5rem;
+}
+
+.item__img {
+    display: block;
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.item__input:checked ~ .item__picture {
+    display: block;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
