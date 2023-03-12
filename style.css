@@ -26,7 +26,7 @@ p {
     padding: 0;
 }
 
-h1, h2 {
+h1 {
     margin: 0;
     padding: 0;
 }
@@ -37,7 +37,7 @@ div {
 }
 
 .container {
-    max-width: 68.75rem;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -48,6 +48,10 @@ div {
 
 .list {
     margin: 3rem 0;
+}
+
+.item + .item {
+    margin-top: 1rem;
 }
 
 .item__input {
@@ -65,7 +69,7 @@ div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.625rem 1.25rem;
+    padding: 0.625rem 2rem;
     cursor: pointer;
     border-radius: 1rem;
     transition: all 0.5s ease;
@@ -88,7 +92,7 @@ div {
 
 .item__picture {
     display: none;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .item__img {
@@ -97,7 +101,13 @@ div {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
-    width: 50%;
+    max-width: 60%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.item__img:hover {
+    transform: scale(1.05);
 }
 
 .item__input:checked ~ .item__picture {
